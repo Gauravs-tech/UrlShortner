@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ShortUrlMapper {
+
+
     public ShortUrl toEntity(CreateShortUrlRequest request){
         return ShortUrl.builder()
                 .originalUrl(request.getOriginalUrl())
@@ -25,4 +27,6 @@ public class ShortUrlMapper {
                 shortUrl.getExpiresAt()
                 );
     }
+
+
 }

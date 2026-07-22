@@ -9,7 +9,7 @@ import com.example.urlshortener.exception.ResourceNotFoundException;
 import com.example.urlshortener.exception.ShortCodeGenerationException;
 import com.example.urlshortener.generator.ShortCodeGenerator;
 import com.example.urlshortener.mapper.ShortUrlMapper;
-import com.example.urlshortener.repository.ShortUrlRepository;
+import com.example.urlshortener.repository.shortUrlRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,7 +22,7 @@ import java.time.OffsetDateTime;
 @Transactional
 public class ShortUrlService {
 
-    private final ShortUrlRepository repository;
+    private final shortUrlRepository repository;
     private final ShortUrlMapper mapper;
     private final ShortCodeGenerator shortCodeGenerator;
     private final ApplicationProperties applicationProperties;
@@ -122,4 +122,7 @@ public class ShortUrlService {
         return mapper.toResponse(savedShortUrl,shortUrlValue);
 
     }
+
+
+
 }
