@@ -25,6 +25,20 @@ Inspired by **Bit.ly** and **TinyURL**, this project demonstrates modern backend
 </div>
 
 ---
+# 🌐 Live Demo
+
+🚀 **Application**
+
+https://urlshortner-kgda.onrender.com
+
+📖 **Swagger UI**
+
+https://urlshortner-kgda.onrender.com/swagger-ui/index.html
+
+❤️ **Health Check**
+
+https://urlshortner-kgda.onrender.com/actuator/health
+
 
 # 📖 Overview
 
